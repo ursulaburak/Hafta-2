@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antik Yunan Etkinlik Kayıt Formu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Genel Stiller */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f8d56b, #3a4a5f);
+            color: #333;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Başlık Stilleri */
+        #title {
+            color: #3a4a5f;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            position: relative;
+        }
+        
+        #title::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #f8d56b;
+            margin: 15px auto;
+            border-radius: 2px;
+        }
+        
+        #description {
+            text-align: center;
+            color: #555;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        
+        /* Form Stilleri */
+        #survey-form {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        label {
+            font-weight: 600;
+            color: #3a4a5f;
+            font-size: 1.1em;
+        }
+        
+        input, select, textarea {
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: all 0.3s;
+        }
+        
+        input:focus, select:focus, textarea:focus {
+            border-color: #3a4a5f;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(58, 74, 95, 0.2);
+        }
+        
+        input::placeholder, textarea::placeholder {
+            color: #aaa;
+        }
+        
+        /* Özel Input Stilleri */
+        #name, #email, #number, #dropdown, #comments {
+            width: 100%;
+        }
+        
+        /* Radio ve Checkbox Stilleri */
+        .radio-group, .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .radio-option, .checkbox-option {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        input[type="radio"], input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #3a4a5f;
+        }
+        
+        /* Buton Stilleri */
+        #submit {
+            background-color: #3a4a5f;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 1.1em;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 10px;
+        }
+        
+        #submit:hover {
+            background-color: #2c3848;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* İkonlar */
+        .icon {
+            margin-right: 8px;
+            color: #3a4a5f;
+        }
+        
+        /* Responsive Tasarım */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            
+            #title {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title"></i> Ursula Le Guin Anma Haftası </h1>
+        <p id="description">Ursula Le Guin Paneline Katılım Formu</p>
+        
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name"></i> Tam Adınız</label>
+                <input type="text" id="name" name="name" placeholder="Örn: Omelas" required>
+            </div>
+            
+            <div class="form-group">
+                <label id="email-label" for="email"></i> E-posta Adresiniz</label>
+                <input type="email" id="email" name="email" placeholder="Örn: omelass@foundation.edu" required>
+            </div>
+            
+            <div class="form-group">
+                <label id="number-label" for="number"></i> Yaşınız</label>
+                <input type="number" id="number" name="age" min="18" max="99" placeholder="18-99 arası" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="dropdown"></i> Katılımcı Profili</label>
+                <select id="dropdown" name="role" required>
+                    <option value="" disabled selected>Seçim yapınız</option>
+                    <option value="student">Öğrenci</option>
+                    <option value="teacher">Akademisyen</option>
+                    <option value="researcher">Araştırmacı</option>
+                    <option value="other">Diğer</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label></i> Hangi Etkinliklere Katılmak İstersiniz?</label>
+                <div class="checkbox-group">
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="prefer" value="fantasy"> Yerdeniz Öyküleri
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="prefer" value="sociology"> Mülksüzler
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="prefer" value="aliens"> Roconnon'un Dünyası
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="prefer" value="mystery"> Omelas'ı Bırakıp Gidenler
+                    </label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label></i> Eklemek İstedikleriniz</label>
+                <textarea id="comments" name="comment" placeholder="Özel istekleriniz veya sorularınız..."></textarea>
+            </div>
+            
+            <button type="submit" id="submit"></i> Kayıt Ol</button>
+        </form>
+    </div>
+</body>
+</html>
