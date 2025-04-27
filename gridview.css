@@ -1,0 +1,159 @@
+.container,
+.container-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row.center {
+    align-items: center;
+}
+
+[class*="col-"] {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+@media (min-width: 768px) {
+
+.col-xs {
+    flex-grow: 1
+    flex-basis: 0
+    max-width: 100%
+}
+.clo-xs-1 {
+    flex-basis: 8.3%
+}
+.clo-xs-2 {
+    flex-basis: 16.6%
+}
+.clo-xs-3 {
+    flex-basis: 25%
+}
+.clo-xs-4 {
+    flex-basis: 33.3%
+}
+.clo-xs-5 {
+    flex-basis: 41.6%
+}
+.clo-xs-6 {
+    flex-basis: 50%
+}
+.clo-xs-7 {
+    flex-basis: 58.3%
+}
+.clo-xs-8 {
+    flex-basis: 66.6%
+}
+.clo-xs-9 {
+    flex-basis: 75%
+}
+.clo-xs-10 {
+    flex-basis: 83.3%
+}
+.clo-xs-11 {
+    flex-basis: 91.6%
+}
+.clo-xs-12 {
+    flex-basis: 100%
+}
+}
+
+
+@media (min-width: 1024px) {
+    .col-md {
+        flex-grow: 1
+        flex-basis: 0
+        max-width: 100%
+    }
+    .clo-md-1 {
+        flex-basis: 8.3%
+    }
+    .clo-md-2 {
+        flex-basis: 16.6%
+    }
+    .clo-md-3 {
+        flex-basis: 25%
+    }
+    .clo-md-4 {
+        flex-basis: 33.3%
+    }
+    .clo-md-5 {
+        flex-basis: 41.6%
+    }
+    .clo-md-6 {
+        flex-basis: 50%
+    }
+    .clo-md-7 {
+        flex-basis: 58.3%
+    }
+    .clo-md-8 {
+        flex-basis: 66.6%
+    }
+    .clo-md-9 {
+        flex-basis: 75%
+    }
+    .clo-md-10 {
+        flex-basis: 83.3%
+    }
+    .clo-md-11 {
+        flex-basis: 91.6%
+    }
+    .clo-md-12 {
+        flex-basis: 100%
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg {
+        flex-grow: 1
+        flex-basis: 0
+        max-width: 100%
+    }
+    .clo-lg-1 {
+        flex-basis: 8.3%
+    }
+    .clo-lg-2 {
+        flex-basis: 16.6%
+    }
+    .clo-lg-3 {
+        flex-basis: 25%
+    }
+    .clo-lg-4 {
+        flex-basis: 33.3%
+    }
+    .clo-lg-5 {
+        flex-basis: 41.6%
+    }
+    .clo-lg-6 {
+        flex-basis: 50%
+    }
+    .clo-lg-7 {
+        flex-basis: 58.3%
+    }
+    .clo-lg-8 {
+        flex-basis: 66.6%
+    }
+    .clo-lg-9 {
+        flex-basis: 75%
+    }
+    .clo-lg-10 {
+        flex-basis: 83.3%
+    }
+    .clo-lg-11 {
+        flex-basis: 91.6%
+    }
+    .clo-lg-12 {
+        flex-basis: 100%
+    }
+}
+

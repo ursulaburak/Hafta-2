@@ -1,0 +1,79 @@
+:root {
+    
+}
+
+* {
+    box-sizing:border-box;
+}
+body {
+    font-family: "Inter", sans-serif;
+    color: #282828;
+    background-color: whitesmoke;
+}
+
+{
+    width: 70px
+    padding:0-15px
+}
+    p {
+        color: #484848;
+    }
+
+    /* HEADER */
+
+    #header {
+        position: relative;
+        padding: 0 32px;
+        background-color: white;
+    }
+    
+    #nav {
+        display: flex;
+        gap: 0-32px;
+        justify-content:end;
+        align-items: center;
+    }
+    
+    #nav-items {
+        color: black;
+        padding: 2px;
+        text-decoration: none;
+    }
+    
+    #nav-items {
+        text-decoration: (line-through; button.button)
+    }
+    
+    
+    .container {
+        width: 738px
+    }
+    
+    .container {
+        width: 994px
+    }
+    
+    .container {
+        width: 1170px
+    }
+    
+    /* ABOUT */
+#about {
+    max-width: 800px;
+    text-align: center;
+    margin: 0;
+    padding: 0 16px;
+}
+
+#about h4 {
+    font-size: 32px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+    /* BLOG */
+
+    .blog {
+        background-color: white;
+    }
+    
