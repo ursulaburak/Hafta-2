@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ted Chiang</title>
+    <style>
+        /* CSS Stilleri */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --text-color: #ecf0f1;
+            --background-color: #42612e;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        nav {
+            background-color: var(--secondary-color);
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--accent-color);
+        }
+        
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3rem 1rem;
+            background: linear-gradient(rgba(44, 105, 109, 0.507), rgba(53, 144, 167, 0.7)),
+                        url('https://unsplash.com/photos/black-flat-screen-tv-turned-on-in-dim-lit-room-jdPZCl3sgQQ');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+        
+        .hero img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--accent-color);
+            margin-bottom: 1rem;
+        }
+        
+        .quote {
+            font-style: italic;
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 1rem;
+            border-left: 3px solid var(--accent-color);
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        section {
+            margin-bottom: 3rem;
+        }
+        
+        h1, h2, h3 {
+            color: var(--accent-color);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .book-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .book {
+            background-color: var(--secondary-color);
+            padding: 1.5rem;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        
+        .book:hover {
+            transform: translateY(-5px);
+        }
+        
+        .book h3 {
+            margin-top: 0;
+        }
+        
+        .book-year {
+            color: #bdc3c7;
+            font-size: 0.9rem;
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .book-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ted Chiang</h1>
+    </header>
+    
+    <nav>
+        <a href="#home">Ana Sayfa</a>
+        <a href="#bio">Biyografi</a>
+        <a href="#works">Eserler</a>
+    </nav>
+    
+    <section id="home" class="hero">
+        <img src="./assets/images.jpg" alt="Ted Chiang">
+        <blockquote class="quote">
+            "Evrenin size mantıklı gelme gibi bir zorunluluğu yoktur."
+        </blockquote>
+    </section>
+    
+    <div class="container">
+        <section id="bio">
+            <h2>Biyografi</h2>
+            <p>Ted Chiang (1967 doğumlu), Amerikalı bir bilim kurgu yazarıdır. Çince adı Chiang Feng-nan (姜峯楠)'dır. Eserleriyle dört Nebula Ödülü, dört Hugo Ödülü ve En İyi Yeni Yazar dalında John W. Campbell Ödülü de dahil olmak üzere çok sayıda ödül kazanmıştır.</p>
+            
+            <p>Chiang, Port Jefferson, New York'ta doğdu ve Brown Üniversitesi'nden bilgisayar bilimi derecesi ile mezun oldu. Şu anda yazılım sektöründe teknik yazar olarak çalışmakta ve Bellevue, Washington'da yaşamaktadır.</p>
+            
+            <p>Nispeten az sayıda eser vermesine rağmen - sadece yaklaşık yirmi kısa öykü ve novella yayınlamıştır - Chiang kendisini çağdaş bilim kurgu yazarlarının en saygınlarından biri olarak kabul ettirmiştir. Öyküleri sıklıkla felsefi ve metafizik temaları keşfeder, sert bilim kurguyu derin bir hümanizmle harmanlar.</p>
+            
+            <p>Chiang'ın en ünlü eseri "Hayatının Hikayesi", Amy Adams'ın başrol oynadığı 2016 yapımı "Geliş" (Arrival) filmine uyarlanmıştır. Öykü, bir dilbilimcinin uzaylı ziyaretçilerle iletişim kurma çabaları üzerinden dilsel görelilik ve zamanın doğasını araştırır.</p>
+            
+            <p>Chiang'ın yazıları, kesin, zarif üslubu ve karmaşık bilimsel ve felsefi fikirleri düşünceli bir şekilde araştırmasıyla tanınır. Genellikle her öykü üzerinde yıllarca araştırma yapar ve yazarak olağanüstü derinlik ve kalitede eserler ortaya çıkarır.</p>
+        </section>
+        
+        <section id="works">
+            <h2>Önemli Eserleri</h2>
+            <div class="book-list">
+                <div class="book">
+                    <h3>Hayatının Hikayesi</h3>
+                    <p>Bir dilbilimci, zaman algısını değiştiren bir uzaylı dili öğrenir.</p>
+                    <p class="book-year">1998 (Uzun Öykü)</p>
+                </div>
+                
+                <div class="book">
+                    <h3>Nefes Ver</h3>
+                    <p>Yabancı bir dünyadaki bir bilim insanı, gerçekliğin doğası hakkında derin bir keşif yapar.</p>
+                    <p class="book-year">2008 (Kısa Öykü)</p>
+                </div>
+                
+                <div class="book">
+                    <h3>Yazılım Nesnelerinin Yaşam Döngüsü</h3>
+                    <p>İnsanlar ve yapay zekalar arasındaki ilişkiyi uzun yıllar boyunca araştırır.</p>
+                    <p class="book-year">2010 (Uzun Öykü)</p>
+                </div>
+                
+                <div class="book">
+                    <h3>Cehennem Tanrı'nın Yokluğudur</h3>
+                    <p>İlahi mucizelerin ve meleksi ziyaretlerin ampirik olarak doğrulanabilir olduğu bir dünya.</p>
+                    <p class="book-year">2001 (Kısa Roman)</p>
+                </div>
+                
+                <div class="book">
+                    <h3>Babil Kulesi</h3>
+                    <p>Fiziksel ve kozmolojik detaylara dikkat ederek yeniden yorumlanan bir İncil hikayesi.</p>
+                    <p class="book-year">1990 (Kısa Öykü)</p>
+                </div>
+                
+                <div class="book">
+                    <h3>Anlamak</h3>
+                    <p>Deneysel bir tedavi yoluyla insanüstü zekaya kavuşan bir adam.</p>
+                    <p class="book-year">1991 (Kısa Roman)</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>Bu website patika.dev ödevi için hazırlanmıştır</p>
+    </footer>
+</body>
+</html>
