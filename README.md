@@ -1,4 +1,8 @@
-#HTML Sayfa Özeti
+# 🗓️ Week 2 Project – “Hafta‑2”
+
+This repository contains all the work and assignments from **Week 2** of your learning program (e.g., a web development course, Patika.dev module, or similar). It showcases exercises, sample code, and deliverables completed during the second week.
+
+---
 Genel Yapı
 
 Bu HTML dosyası, responsive bir web sayfası oluşturmaktadır.
