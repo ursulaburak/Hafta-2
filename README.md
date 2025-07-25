@@ -1,17 +1,17 @@
-# 🗓️ Week 2 Project – “Hafta‑2”
+# 🗓️ Hafta 2 Project
 
-This repository contains all the work and assignments from **Week 2** of your learning program (e.g., a web development course, Patika.dev module, or similar). It showcases exercises, sample code, and deliverables completed during the second week.
+This repository contains all the work and assignments from **Hafta 2** of your learning program (e.g., a web development course, Patika.dev module, or similar). It showcases exercises, sample code, and deliverables completed during the second week.
 
 ---
-Genel Yapı
+📐 General Structure
 
-Bu HTML dosyası, responsive bir web sayfası oluşturmaktadır.
-Temel Bölümler
-Başlık (Header)
+This HTML file creates a responsive web page layout designed to adapt to different screen sizes.
+🧱 Main Sections
+🧭 Header
 
-    Logo (deko.jpg)
+    Logo: Displayed using the image deko.jpg
 
-    Navigasyon menüsü:
+    Navigation Menu with the following items:
 
         Home
 
@@ -21,12 +21,14 @@ Başlık (Header)
 
         Library
 
-        Button
+        Button (e.g., for login, signup, or CTA)
 
+⚙️ Technical Details
 
+    A CSS Grid system is used to achieve a responsive layout.
 
-#Teknik Detaylar
+    Stylesheets included:
 
-    Responsive tasarım için grid sistemi kullanılmıştır.
+        normalize.css — to ensure cross-browser consistency
 
-    normalize.css ve özel stil dosyaları (gridview.css)
+        gridview.css — custom styles for layout and visual design
